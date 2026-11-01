@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Bachelor Thesis Co-Supervision Track | Spring 2027</title>
+    <!-- Tailwind CSS for modern layout and styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth dynamic dropdown transitions */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease-out;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 2000px; /* High limit to handle extensive topic lists smoothly */
+            padding-bottom: 1.25rem;
+            transition: max-height 0.3s cubic-bezier(1, 0, 1, 0), padding 0.3s ease-in;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans antialiased">
+
+
+            <!-- Dual-Perspective Navigation Switcher -->
+    <nav class="bg-slate-900 border-b border-slate-800 py-3 px-6 shadow-md">
+        <div class="max-w-5xl mx-auto flex justify-end items-center gap-4 text-xs font-semibold">
+            <!-- Label and buttons cleanly aligned together on the left side of the right-aligned container -->
+            <div class="flex items-center gap-4">
+                <span class="text-slate-400 uppercase tracking-wider">CHOOSE:</span>
+                
+                <!-- Link to Student Perspective -->
+                <a href="ulm_student_faq.html" id="nav-student" class="px-4 py-2 rounded-lg transition-all duration-150 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800 hover:border-slate-600">
+                    &#127891; Student Portal
+                </a>
+                
+                <!-- Link to Supervisor Perspective -->
+                <a href="ulm_supervisor_faq.html" id="nav-supervisor" class="px-4 py-2 rounded-lg transition-all duration-150 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800 hover:border-slate-600">
+                    &#128221; Supervisor Portal
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- Logo Top Bar Layout Component -->
+    <div class="bg-white border-b border-gray-200 py-4 px-6 shadow-xs">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <!-- German Universities Ulm Campus Logo Placement -->
+            <div class="flex items-center">
+                <div class="h-16 w-auto flex items-center justify-center p-1 bg-white border border-gray-100 rounded-md">
+                    <span class="text-xs font-bold text-gray-400 italic">
+						<img src="German_Universities_Ulm_Campus_logo.jpg" alt="German Universities Ulm Campus Logo" class="h-16 w-auto object-contain">
+					</span>
+                </div>
+            </div>
+            <!-- GUC German University in Cairo Logo Placement -->
+            <div class="flex items-center">
+                <div class="h-16 w-auto flex items-center justify-center p-1 bg-white border border-gray-100 rounded-md">
+                    <span class="text-xs font-bold text-gray-400 italic">
+						<img src="German_University_in_Cairo_Logo.jpg" alt="German University in Cairo Logo" class="h-16 w-auto object-contain">
+					</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Banner Section -->
+    <header class="bg-gradient-to-r from-red-800 via-slate-900 to-slate-950 text-white py-12 px-4 shadow-md border-b-4 border-amber-500">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block bg-amber-500/20 text-amber-300 font-bold text-xs tracking-wider uppercase px-3 py-1 rounded-full mb-3 border border-amber-500/30">
+                Official Spring 2027 Guidelines
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                German Universities Ulm Campus
+            </h1>
+            <p class="mt-3 text-lg text-slate-300 max-w-2xl mx-auto">
+                Co-Supervision Bachelor Thesis Track FAQs for GUC Students.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Containers -->
+    <main class="max-w-4xl mx-auto px-4 py-10">
+
+        <!-- Essential Track Phase Summary -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm mb-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            <div class="p-2">
+                <span class="block text-2xl mb-1">🇪🇬</span>
+                <span class="block text-sm font-bold text-gray-500 uppercase">Phase 1: Cairo</span>
+                <p class="text-sm font-semibold text-slate-800 mt-1">2 Months Initiation</p>
+                <p class="text-xs text-gray-500 px-2 mt-1">Work with your GUC Supervisor to define and initiate your thesis.</p>
+            </div>
+            <div class="p-2">
+                <span class="block text-2xl mb-1">🇩🇪</span>
+                <span class="block text-sm font-bold text-gray-500 uppercase">Phase 2: Germany</span>
+                <p class="text-sm font-semibold text-slate-800 mt-1">2-3 Months Research</p>
+                <p class="text-xs text-gray-500 px-2 mt-1">On-site research at Ulm Campus / partner hubs, co-supervised by German Faculty.</p>
+            </div>
+            <div class="p-2">
+                <span class="block text-2xl mb-1">🎓</span>
+                <span class="block text-sm font-bold text-gray-500 uppercase">Phase 3: Completion</span>
+                <p class="text-sm font-semibold text-slate-800 mt-1">Defense & Exhibition</p>
+                <p class="text-xs text-gray-500 px-2 mt-1">Present to international industries. Defense will be in Ulm or Cairo.</p>
+            </div>
+        </div>
+
+        <!-- Accordion FAQ Dynamic Wrapper -->
+        <div class="space-y-6">
+
+            <!-- Section 1: Prerequisites & Assignment -->
+            <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 pb-1 border-b border-gray-200 flex items-center gap-2">
+                    <span>🎯</span> Eligibility & Topic Assignment
+                </h2>
+                <div class="space-y-3">
+                    
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>What are the academic prerequisites to apply?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            Before your selection can be officially confirmed, the university reviews your academic records. Your 
+							<span class="font-bold text-slate-950">GPA must not be above 3.0</span>
+							. You must also provide an updated CV along with a targeted motivation letter detailing why you want to join the track and focus on your selected topic.
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>How are the thesis topics assigned to applicants?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            Students must first select and rank their preferred choices directly on the system. Allocation runs on a 
+								<span class="font-bold text-slate-950">first-come, first-served basis</span>
+							 linked with meeting the 3.0 GPA cutoff and finishing the down payment. Usually, 
+								<span class="font-bold text-slate-950">only 1 student</span>
+							 is assigned to an individual topic, unless special capacity allows a professor to split a topic.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Section 2: Financial & Payments -->
+            <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 pb-1 border-b border-gray-200 flex items-center gap-2">
+                    <span>💶</span> Tuition Fees & Financial Schedule
+                </h2>
+                <div class="space-y-3">
+                    
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>How are tuition fees calculated for the Ulm Track?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            Students pay the 
+							<span class="font-bold text-slate-950">exact equivalent of their regular Cairo semester tuition fees</span>
+						, converted into Euros. While standard academic excellence scholarships apply to your regular semester tuition balance, local 
+							<span class="font-bold text-slate-950">financial aid packages do not apply</span>
+						 to this international track.
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>What are the exact payment deadlines for Spring 2027?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm">
+                            The structured payment order from the Finance Department follows this official timeline:
+                            <table class="w-full mt-3 border border-gray-200 text-xs rounded-lg overflow-hidden shadow-xs">
+                                <thead class="bg-gray-100 font-bold text-gray-700">
+                                    <tr>
+                                        <th class="p-2 border-b text-left">Installment Step</th>
+                                        <th class="p-2 border-b text-left">Amount Due</th>
+                                        <th class="p-2 border-b text-left">Deadline</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 bg-white">
+                                    <tr>
+                                        <td class="p-2 font-medium">Initial Down Payment</td>
+                                        <td class="p-2 text-red-700 font-semibold">500 Euro (Non-Refundable)</td>
+                                        <td class="p-2 italic text-gray-500">Upon system topic confirmation</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 font-medium">Rest of Down Payment</td>
+                                        <td class="p-2 font-semibold">800 Euro</td>
+                                        <td class="p-2 font-medium">9 December 2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 font-medium">2nd Installment</td>
+                                        <td class="p-2 font-semibold">(Total Tuition minus 1300) Euro</td>
+                                        <td class="p-2 font-medium">5 March 2027</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>Do I need a German Blocked Bank Account (Sperrkonto)?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            
+								<span class="font-bold text-slate-950">No blocked bank account is required</span>
+							. Because your stay in Germany is structured as a short, focused research window of only two to three months, you are exempt from this protocol. Visa procedures are officially facilitated by the university.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 pb-1 border-b border-gray-200 flex items-center gap-2">
+                    <span>🏡</span> Location & Accommodation Strategy
+                </h2>
+                <div class="space-y-3">
+                    
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>Will all students be physically based in Ulm?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            No, it depends on your specific topic and supervisor. While the collaborative main hub is the 
+							<span class="font-bold text-slate-950">German Universities Ulm Campus</span>
+						 in the Science Park on Oberer Eselsberg, partner co-supervisors are also based at regional partner universities like Reutlingen University, University of Konstanz, Stuttgart University, and HTW Saar. You can choose to stay in a collective location with friends and commute to your professor's site via train.
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>Does the university handle housing arrangements?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            Students are ultimately 
+							<span class="font-bold text-slate-950">responsible for arranging and securing their own accommodation</span>
+						 and personal living expenses. GUC owns an official <span class="italic text-slate-600">Ulm Guest House</span>
+						, but it operates based on strict capacity windows and is often fully occupied. Students are strongly urged to apply early for a local <span class="italic text-slate-600">Studentenwohnheim</span>
+						 (university dorm), Airbnb, or private alternatives. The 
+							<span class="font-bold text-slate-950">Travel Office</span>
+						 and 
+							<span class="font-bold text-slate-950">Germany Office</span>
+						 can review your choices to make sure the accommodation contract and location are safe.
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>Will GUC internal supervisors travel to Germany?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            Yes, 
+								<span class="font-bold text-slate-950">teaching staff and native supervisors from the GUC will also travel to Ulm and Germany</span>
+							. This ensures you have close internal support and that your research benchmarks match up with all local academic regulations.
+													</div>
+                    </div>
+
+                </div>
+            </div>
+			
+			
+			
+			            <!-- Section: Thesis Supervision Journey & Process Expectations -->
+            <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 pb-1 border-b border-gray-200 flex items-center gap-2">
+                    <span>🤝</span> Thesis Supervision Journey & Process Expectations
+                </h2>
+                <div class="space-y-3">
+                    
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>How does the joint supervision process work from start to finish?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            Your graduation thesis follows a highly structured milestone timeline designed to support your development across both continents:
+                            <ul class="list-disc pl-5 mt-2 space-y-2 text-xs">
+                                <li><span class="font-bold text-slate-900">Phase 1 (Egypt - First 2 Months):</span> You work closely with your internal GUC supervisor to build a comprehensive preliminary Thesis Outline and Project Proposal. Once confirmed or updated by your partner research group in Germany, you start your literature review, setup datasets, and build your baseline framework, algorithms, or code blocks.</li>
+                                <li><span class="font-bold text-slate-900">Phase 2 (Germany - Next 2 Months):</span> You travel to Germany to focus heavily on the core development task, experimentation phase, and evaluation testing under the on-site supervision and mentorship of your Baden-Württemberg professor.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>Is my GUC supervisor involved during my research stay in Germany?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            Yes. Your <span class="font-bold text-slate-900">GUC supervisor participates actively throughout the entire process</span> to guarantee continuous academic alignment. While you are working on your development tasks in Germany, you will maintain consistent progress updates and draft review loops shared transparently between both supervisors. 
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>What are the tracking and meeting documentation requirements?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            While in Germany, you will arrange recurring office hour sessions to meet with your host research group on a <span class="font-bold text-slate-900">weekly or bi-weekly basis</span>. To ensure proper milestone documentation and professional engineering tracking, it is highly expected that <span class="font-bold text-slate-900">Minutes of Meetings (MoM)</span> are formally recorded for these tracking loops.
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm transition-all">
+                        <button class="w-full text-left font-semibold text-gray-800 px-5 py-4 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                            <span>How and where will the final presentation panel be held?</span>
+                            <svg class="faq-icon h-5 w-5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-answer px-5 text-gray-600 text-sm leading-relaxed">
+                            Upon completing your final draft iterations, you will formally present and defend your research project. Defenses can take place on-site at the GUC Cairo campus or directly at your host's campus in Germany. The non-traveling co-supervision panel from <span class="font-bold text-slate-900">the other partner institution will join the presentation synchronously online</span>.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+			
+			
+			
+
+            <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 pb-1 border-b border-gray-200 flex items-center gap-2">
+                    <span>📝</span> Step-by-Step Application Protocol
+                </h2>
+                <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm text-sm">
+                    <ol class="list-decimal pl-5 space-y-2 font-medium text-slate-800">
+                        <li><span class="text-gray-600 font-normal">Check the available system options, evaluate research specifics, and select your preferred thesis topics.</span></li>
+                        <li><span class="text-gray-600 font-normal">Fill in the application form completely.</span></li>
+                        <li><span class="text-gray-600 font-normal">Obtain signatures from your primary GUC supervisor and Faculty Dean.</span></li>
+                        <li><span class="text-gray-600 font-normal">Submit your updated CV, motivation letter, and the signed form directly to <strong>Student Affairs</strong>.</span></li>
+                        <li><span class="text-gray-600 font-normal">Collect your explicit Payment Order from the <strong>Finance Department</strong> to deposit your initial down payment.</span></li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 px-4 mt-16 text-center border-t border-slate-800 text-xs">
+        <p>© 2026 German University in Cairo • German Universities – Ulm Campus Strategic Partnership</p>
+    </footer>
+
+    <script>
+        function toggleFaq(button) {
+            const currentItem = button.parentElement;
+            const isActive = currentItem.classList.contains('active');
+            
+            // Close all active items to ensure clean interaction layout
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // If the element clicked wasn't already active, open it now
+            if (!isActive) {
+                currentItem.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
